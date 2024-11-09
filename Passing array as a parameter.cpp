@@ -5,8 +5,10 @@ using namespace std;
 void arr(int a[] ,int s){
 //void arr(int *a ,int s){	
 	for (int i=0;i<s;i++){
-	
-	cout<<a[i]+1<<"\t";
+//	a[i]=a[i]+10;
+//	cout<<a[i]<<"\t";
+//	cout<<a[i]++<<"\t";
+   cout<<a[i]--<<"\t";
 }
 }
 int main(){
@@ -14,5 +16,12 @@ int main(){
 	int s=sizeof(x)/sizeof(x[0]);
 	arr(x,s);
 	cout<<"\n";
-//	cout<<x[i]<<"\t";
+	for(int i=0;i<s;i++){
+			cout<<x[i]<<"\t";
+	}
+
 }
+
+
+
+
